@@ -30,6 +30,12 @@ ev-evbuilder-emlakçı
 
 Sınıfların ve nesnelerin daha büyük yapılar halinde nasıl birleştirilip verimli kullanılacağını açıklayan mekanizmalar sunuyor.
 
+
+1-) Adaptor design pattern
+
+uyumlu olmayan arayüzleri birbirine dönüştürerek kullanır.bu patterni açıklamak ve daha iyi anlamak için telefon- elektronik ev cihazları - priz - voltaj dörtlüsünü düşünebiliriz. priz farklı voltajlarda çalışan elektrikli ev  cihazları için farklı voltaj değerleri üretmez fakat uygun adaptörü prize takarak cihazları çalıştırabiliriz.buradaki farklı arayüzler telefon ve elektronik ev cihazlarıdır. telefon ve elektronik ev cihazlarının adaptasyonu için bir class oluşturup implementasyon gerçekleştirerek uygun voltajda teleonun da çalışmasını sağlıyoruz.  
+
+
 •Behavioral Patterns
 
 Bu patternler algoritmalar ile nesneler arasındaki sorumlulukların nasıl atanacağını açıklayan mekanizmalar sunuyor.
@@ -38,4 +44,10 @@ Bu patternler algoritmalar ile nesneler arasındaki sorumlulukların nasıl atan
 
 nesnenin değişen durumunun diğer nesnelere otomatik haber verilmesi durumları için bu patterni kullanıyoruz. arayüzler oluşturarak bağımlılıkları azaltıp modüler bir kod yazmamızı sağlıyor. observer adında bir interface oluşturup bir update methodu tanımlyoruz.
 gözlemci classı ekliyoruz nesnenin durumu değiştiğinde update edip kayıtlı gözlemcileri haberdar ediyoruz.
+
+2-) Strategy design pattern
+
+farklı algoritmalar ya da davranış biçimleri arsında seçim yapmamızı sağlar.Yani başlangıçta farkı algoritma varyasyonları oluşturulur. Bu patternle aynı arayüzü kullanan farklı stratejilerin değiştirilmesi sağlanır.Algoritmanın clientlerden bağımsız değişimini sağlar
+
+bölüm- ders- sınav stratejisi
 
